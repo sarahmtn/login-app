@@ -89,13 +89,13 @@ function Form() {
           {members.map((member) => {
                 return <div style={{width: '95%' , height: 60, justifyContent: 'center' , alignItems: 'center' , marginTop: 8 , marginLeft: 10}}>
                   <div style={{width: '100%' , height:'100%', flexDirection: 'row' }} className='user_item'>
-                    <div style={{width: '30%' , height:'100%' ,justifyContent: 'center' , alignItems: 'center' , textAlign: 'center'}} className='xxx' >
+                    <div style={{width: '30%' , height:'100%' ,justifyContent: 'center' , alignItems: 'center' , textAlign: 'center'}} className='new_style' >
                       <p >{member.phone}</p>
                     </div>
-                    <div style={{width: '30%' , height: '100%' ,justifyContent: 'center' , alignItems: 'center'  }} className='xxx'>
+                    <div style={{width: '30%' , height: '100%' ,justifyContent: 'center' , alignItems: 'center'  }} className='new_style'>
                       <p >{member.password}</p>
                     </div>
-                    <div style={{width: '30%' , height: '100%' ,display: 'flex' , justifyContent: 'flex-end' }} className='xxx'>
+                    <div style={{width: '30%' , height: '100%' ,display: 'flex' , justifyContent: 'flex-end' }} className='new_style'>
                       <button type="button"  className="btn btn-danger" onClick={() => delete_members(member.phone)}>Delete</button>
                     </div>
                   </div>
